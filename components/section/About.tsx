@@ -97,7 +97,7 @@ const About: React.FunctionComponent<AboutProps> = (props) => {
           <Grid item xs={12} md={6} style={{ padding: 0 }}>
             <ImageWrapper>
               <Image
-                alt="John Doe profile image"
+                alt="Doni Sumner profile image"
                 layout="fill"
                 objectFit="cover"
                 objectPosition="center center"

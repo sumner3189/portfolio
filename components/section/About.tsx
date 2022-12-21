@@ -131,11 +131,8 @@ const About: React.FunctionComponent<AboutProps> = (props) => {
               </Typography>
               <CardContent>
                 <Typography component="p" variant="body1">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Dolorum exercitationem voluptate sapiente necessitatibus alias
-                  rerum voluptates accusamus tenetur, eaque natus possimus aut
-                  magni odio saepe eligendi laudantium. Enim, illo quod.
-                </Typography>
+                  My Name Is Doni DeLeon Sumner!! I'm in school learning codes and learning about HTML,CSS,Bootstrap,JavaScript and right now working on react.
+                  I'm love to learn and start building my career. Im trying to be a best developer I can be. I want to expand my knownlodge and change level in coding to a master coder.                 </Typography>
                 <Collapse
                   in={showMore}
                   sx={{

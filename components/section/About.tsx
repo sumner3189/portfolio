@@ -144,14 +144,7 @@ const About: React.FunctionComponent<AboutProps> = (props) => {
                   unmountOnExit
                 >
                   <Typography component="p" variant="body1">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Sed quis, vitae ea repellendus pariatur nihil ad cupiditate
-                    minima et quasi laborum. Amet eius, aliquam impedit modi
-                    tempore doloribus iusto. Nobis nam, unde officia iusto
-                    repellat obcaecati temporibus recusandae corrupti odit
-                    voluptatem dolor est ullam ad eligendi eum, et molestiae.
-                    Possimus porro adipisci reiciendis corrupti dignissimos fuga
-                    aliquam aperiam quisquam praesentium.
+                    
                   </Typography>
                 </Collapse>
               </CardContent>

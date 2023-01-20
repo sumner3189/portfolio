@@ -50,7 +50,7 @@ const projectsData: Project[] = [
         width: 6000,
         height: 4000,
         likes: 42,
-        src: '/projects/bride/joeyy-lee-j0p4xYW2IVw-unsplash.jpg',
+        src: '/projects/KaiSoul.jpg',
       },
       {
         alt: 'woman in white wedding dress standing on stairs',

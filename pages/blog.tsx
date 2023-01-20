@@ -32,7 +32,7 @@ const Blog: NextPage = (props) => {
         textAlign="center"
         variant="body1"
       >
-        Be up to date in photography and design
+        Be up to date in Coding and Developing
       </Typography>
       {blogPosts ? (
         <ContainerGrid sx={{ padding: { xs: '1rem', sm: '2rem' } }}>

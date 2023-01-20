@@ -52,10 +52,7 @@ const HireMe: NextPage = (props) => {
                 What can I do for you?
               </Typography>
               <Typography component="p" variant="body1">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui,
-                laborum similique voluptas pariatur a doloremque facilis minima
-                quam dolores eveniet eaque aspernatur modi hic? Quod sunt in
-                recusandae adipisci possimus?
+            i can give my best performance and show my potential. Im still in training and learning but if u can help keep it up and give me the touchs and i can show how i can give you the best of me. Im have learn so far HTML, Bootstrap, CSS, JS, React.js and next.JS, And Next.Auth
               </Typography>
             </Box>
           </Grid>

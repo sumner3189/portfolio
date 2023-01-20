@@ -1,13 +1,13 @@
 // react
-import * as React from 'react';
+import * as React from "react";
 // next
-import { useRouter } from 'next/router';
+import { useRouter } from "next/router";
 // @mui
-import { Box, Typography, useTheme } from '@mui/material';
+import { Box, Typography, useTheme } from "@mui/material";
 // custom components
-import CenterBox from 'components/common/CenterBox';
-import TypingEffect from 'components/common/TypingEffect';
-import ScrollDown from 'components/common/ScrollDown';
+import CenterBox from "components/common/CenterBox";
+import TypingEffect from "components/common/TypingEffect";
+import ScrollDown from "components/common/ScrollDown";
 // type
 interface HomeHeroProps {}
 
@@ -26,15 +26,15 @@ const HomeHero: React.FunctionComponent<HomeHeroProps> = (props) => {
         Doni Sumner
       </Typography>
       <Box color="text.secondary">
-        <TypingEffect staticText="I am" text={['photographer', 'designer']} />
+        <TypingEffect staticText="I am" text={["Developer", "Engineer"]} />
       </Box>
       <ScrollDown
         color={info.main}
-        onClick={() => router.push('/#about')}
+        onClick={() => router.push("/#about")}
         sx={{
-          bottom: '10%',
-          cursor: 'pointer',
-          position: 'absolute',
+          bottom: "10%",
+          cursor: "pointer",
+          position: "absolute",
         }}
       />
     </CenterBox>

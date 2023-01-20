@@ -8,7 +8,7 @@ export interface BlogPostDetails {
   category: BlogPostCategory[];
   date: Dayjs;
   id: string;
-  image: ImageProps;
+  image?: ImageProps;
   filename: string;
   title: string;
 }

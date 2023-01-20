@@ -102,7 +102,7 @@ const About: React.FunctionComponent<AboutProps> = (props) => {
                 objectFit="cover"
                 objectPosition="center center"
                 onLoad={() => setIsLoaded(true)}
-                src="/profile.jpg"
+                src="/myself.jpg"
               />
               {!isLoaded && (
                 <Skeleton

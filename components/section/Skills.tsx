@@ -14,8 +14,8 @@ import ContainerGrid from 'components/common/ContainerGrid';
 import SkillProgress from 'components/common/SkillProgress';
 // custom icons
 import IllustratorCCIcon from 'components/icon/IllustratorCC';
-import LightroomCCIcon from 'components/icon/LightroomCC';
-import PhotoshopIcon from 'components/icon/Photoshop';
+import JSIcon from 'components/icon/JSIcon';
+import HTML5Icon from 'components/icon/HTML5';
 // context
 import ComponentsContext from 'context/componentsContext';
 // type
@@ -40,14 +40,14 @@ const Skills: React.FunctionComponent<SkillsProps> = (props) => {
   const skills = [
     {
       Icon: (
-        <PhotoshopIcon bgColor="white" textColor="tomato" fontSize="large" />
+        <HTML5Icon />
       ),
       title: 'HTML, CSS',
       progressValue: 50,
     },
     {
       Icon: (
-        <LightroomCCIcon bgColor="white" textColor="tomato" fontSize="large" />
+        <JSIcon />
       ),
       title: 'JavaScript',
       progressValue: 10,

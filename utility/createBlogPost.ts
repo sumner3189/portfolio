@@ -12,7 +12,7 @@ export const createPost = (props: BlogPostDetails): BlogPost => {
     filename,
     title,
     get likes() {
-      return this.image.likes;
+      return 0;
     },
   };
 };

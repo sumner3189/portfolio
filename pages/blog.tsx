@@ -46,8 +46,8 @@ const Blog: NextPage = (props) => {
                 <BlogCard
                   href={`/blog/${post.id}`}
                   readTime={5}
-                  imageAlt={post.image.alt}
-                  imageSrc={post.image.src}
+                  // imageAlt={post.image.alt}
+                  // imageSrc={post.image.src}
                   sx={{
                     marginLeft: 'auto',
                     marginRight: 'auto',

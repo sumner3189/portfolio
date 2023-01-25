@@ -84,7 +84,7 @@ const Skills: React.FunctionComponent<SkillsProps> = (props) => {
                 size={100}
                 value={skill.progressValue}
                 Icon={skill.Icon}
-                subtitle={`${skill.title} | ${skill.progressValue}%`}
+                subtitle={skill.title}
               />
             </CustomGridItem>
           ))}

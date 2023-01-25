@@ -1,8 +1,8 @@
 // type
-import { Dayjs } from 'dayjs';
+import { Dayjs } from "dayjs";
 
-import { BlogPostCategory } from 'types/categoryType';
-import { ImageProps } from 'types/imageType';
+import { BlogPostCategory } from "types/categoryType";
+import { ImageProps } from "types/imageType";
 
 export interface BlogPostDetails {
   category: BlogPostCategory[];
@@ -14,5 +14,5 @@ export interface BlogPostDetails {
 }
 
 export interface BlogPost extends BlogPostDetails {
-  likes: number;
+  likes?: number;
 }

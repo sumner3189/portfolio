@@ -1,19 +1,19 @@
 // react
-import * as React from 'react';
+import * as React from "react";
 // next
-import { useRouter } from 'next/router';
+import { useRouter } from "next/router";
 // @mui
-import { Box, Grid, Grow, Typography } from '@mui/material';
+import { Box, Grid, Grow, Typography } from "@mui/material";
 // custom component
-import ContainerGrid from 'components/common/ContainerGrid';
-import TypingEffect from 'components/common/TypingEffect';
+import ContainerGrid from "components/common/ContainerGrid";
+import TypingEffect from "components/common/TypingEffect";
 // custom context
-import ConstantsContext from 'context/constantsContext';
-import ProjectCard from 'components/common/ProjectCard';
-import calcArrayOfObj from 'utility/calcArrayOfObj';
-import Filter, { FilterOption } from 'components/common/Filter';
-import sortArrayOfObj from 'utility/sortArrayOfObj';
-import { Project } from 'constants/projectsData';
+import ConstantsContext from "context/constantsContext";
+import ProjectCard from "components/common/ProjectCard";
+import calcArrayOfObj from "utility/calcArrayOfObj";
+import Filter, { FilterOption } from "components/common/Filter";
+import sortArrayOfObj from "utility/sortArrayOfObj";
+import { Project } from "constants/projectsData";
 // type
 interface ProjectsSectionProps {}
 
@@ -25,10 +25,10 @@ const ProjectsSection: React.FunctionComponent<ProjectsSectionProps> = (
   const router = useRouter();
 
   const options = [
-    { label: 'Most Recent', active: true },
-    { label: 'Most Popular' },
-    { label: 'Photography' },
-    { label: 'Design' },
+    { label: "Most Recent", active: true },
+    { label: "Most Popular" },
+    { label: "Photography" },
+    { label: "Design" },
   ];
 
   const handleFilterOptionClick = (option: FilterOption) => {
@@ -36,23 +36,23 @@ const ProjectsSection: React.FunctionComponent<ProjectsSectionProps> = (
       const newProjectsArray: Project[] = Object.assign([], projects);
 
       switch (option.label) {
-        case 'Most Recent':
-          sortArrayOfObj(newProjectsArray, 'date', 'desc');
+        case "Most Recent":
+          sortArrayOfObj(newProjectsArray, "date", "desc");
           setProjectsToRender(newProjectsArray);
           break;
-        case 'Most Popular':
-          sortArrayOfObj(newProjectsArray, 'likes', 'desc');
+        case "Most Popular":
+          sortArrayOfObj(newProjectsArray, "likes", "desc");
           setProjectsToRender(newProjectsArray);
           break;
-        case 'Photography':
+        case "Photography":
           const photographyProjects = newProjectsArray.filter((project) =>
-            project.category.includes('photography')
+            project.category.includes("photography")
           );
           setProjectsToRender(photographyProjects);
           break;
-        case 'Design':
+        case "Design":
           const designProjects = newProjectsArray.filter((project) =>
-            project.category.includes('design')
+            project.category.includes("design")
           );
           setProjectsToRender(designProjects);
           break;
@@ -72,19 +72,19 @@ const ProjectsSection: React.FunctionComponent<ProjectsSectionProps> = (
       </Typography>
       <Box
         color="text.secondary"
-        sx={{ textAlign: 'center', marginTop: '1rem' }}
+        sx={{ textAlign: "center", marginTop: "1rem" }}
       >
-        <TypingEffect staticText="as a" text={['photographer', 'designer']} />
+        <TypingEffect staticText="as a" text={["photographer", "designer"]} />
       </Box>
       <Filter onOptionClick={handleFilterOptionClick} options={options} />
       <ContainerGrid
         justifyContent={
-          projectsToRender?.length === 1 ? 'center' : 'flex-start'
+          projectsToRender?.length === 1 ? "center" : "flex-start"
         }
         sx={{
           padding: {
-            xs: '0 1rem',
-            sm: '0 2rem',
+            xs: "0 1rem",
+            sm: "0 2rem",
           },
         }}
       >
@@ -100,18 +100,18 @@ const ProjectsSection: React.FunctionComponent<ProjectsSectionProps> = (
                     imageAlt={project.images[0].alt}
                     imageSrc={project.images[0].src}
                     title={project.title}
-                    likes={calcArrayOfObj(project.images, 'likes')}
+                    likes={calcArrayOfObj(project.images, "likes")}
                     onButtonClick={() => router.push(`/projects/${project.id}`)}
                     sx={{
-                      maxWidth: '21rem',
-                      marginLeft: 'auto',
-                      marginRight: 'auto',
+                      maxWidth: "21rem",
+                      marginLeft: "auto",
+                      marginRight: "auto",
                     }}
                   />
                 </Grid>
               </Grow>
             ))
-          : 'no project'}
+          : "no project"}
       </ContainerGrid>
     </>
   );

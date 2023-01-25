@@ -17,8 +17,8 @@ import ButtonLink from "components/common/ButtonLink";
 interface BlogCardProps extends CardProps {
   href?: string;
   readTime?: number;
-  imageAlt?: string | null;
-  imageSrc?: string | null;
+  imageAlt?: string | undefined;
+  imageSrc?: string | undefined;
   title?: string;
 }
 

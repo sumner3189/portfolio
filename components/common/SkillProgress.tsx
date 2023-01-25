@@ -26,12 +26,12 @@ const SkillProgress: React.FunctionComponent<SkillProgressProps> = (props) => {
         }}
       >
         <Box sx={{ position: 'relative', display: 'inline-flex' }}>
-          <CircularProgress
+          {/* <CircularProgress
             aria-label="Circular progress bar"
             color="inherit"
             variant="determinate"
             {...otherProps}
-          />
+          /> */}
           <Box
             sx={{
               top: 0,

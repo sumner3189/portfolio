@@ -1,5 +1,5 @@
 // type
-import { BlogPost, BlogPostDetails } from 'types/blogPostType';
+import { BlogPost, BlogPostDetails } from "types/blogPostType";
 
 export const createPost = (props: BlogPostDetails): BlogPost => {
   const { category, date, id, image, filename, title } = props;
@@ -11,8 +11,5 @@ export const createPost = (props: BlogPostDetails): BlogPost => {
     image,
     filename,
     title,
-    get likes() {
-      return 0;
-    },
   };
 };
